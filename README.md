@@ -77,3 +77,29 @@ gh repo create todo-app --public --source=. --remote=origin --push
    git push -u origin main
    ```
    **目的**: ローカルコミットをGitHubリポジトリにプッシュし、origin/mainをupstreamブランチとして設定。
+
+## GitHub Pagesへのデプロイ
+
+プロジェクトをGitHub Pagesにデプロイして公開します。
+
+### デプロイスクリプト実行
+
+```bash
+npm run deploy
+```
+
+**目的**: gh-pagesパッケージを使ってdistフォルダの内容をGitHub Pagesにデプロイします。これにより、アプリが https://kentoukou.github.io/todo-app/ で公開されます。
+
+### 手動デプロイ手順
+
+1. ビルド:
+   ```bash
+   npm run build
+   ```
+   **目的**: プロジェクトをビルドして静的ファイルを生成。
+
+2. デプロイ:
+   ```bash
+   npx gh-pages -d dist
+   ```
+   **目的**: distフォルダをGitHub Pagesにプッシュ。
