@@ -3,6 +3,7 @@
         "gh": true,
         "git add": true,
         "git commit": true,
-        "npm install": true
+        "npm install": true,
+        "git push": true
     }
 }
