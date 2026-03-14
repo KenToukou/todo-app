@@ -4,6 +4,8 @@
         "git add": true,
         "git commit": true,
         "npm install": true,
-        "git push": true
+        "git push": true,
+        "npx gh-pages": true,
+        "git remote": true
     }
 }
