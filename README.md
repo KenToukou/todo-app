@@ -82,6 +82,9 @@ gh repo create todo-app --public --source=. --remote=origin --push
 
 プロジェクトをGitHub Pagesにデプロイして公開します。
 
+### 注意事項
+GitHub Pagesではリポジトリ名をベースパスとして設定する必要があります。`vite.config.js`に`base: '/todo-app/'`が設定されています。これにより、GitHub Pages（https://kentoukou.github.io/todo-app/）で正しく動作します。
+
 ### デプロイスクリプト実行
 
 ```bash
